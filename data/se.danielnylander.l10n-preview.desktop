@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=L10n Preview
+Comment=Preview translations in simulated UI
+Exec=l10n-preview
+Icon=accessories-text-editor
+Terminal=false
+Type=Application
+Categories=Development;GTK;

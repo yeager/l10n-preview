@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "l10n-preview"
+version = "0.1.0"
+description = "Preview PO/TS translations in simulated UI elements"
+readme = "README.md"
+license = "GPL-3.0-or-later"
+requires-python = ">=3.10"
+authors = [{name = "Daniel Nylander", email = "daniel@danielnylander.se"}]
+keywords = ["l10n", "preview", "po", "ts", "gtk4"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: X11 Applications :: GTK",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+]
+dependencies = ["PyGObject>=3.42"]
+
+[project.scripts]
+l10n-preview = "l10n_preview.main:main"
+
+[project.urls]
+Homepage = "https://github.com/yeager/l10n-preview"
+Repository = "https://github.com/yeager/l10n-preview"
+
+[tool.setuptools.packages.find]
+where = ["src"]

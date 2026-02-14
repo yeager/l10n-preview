@@ -1,0 +1,8 @@
+[main]
+host = https://www.transifex.com
+
+[o:yeager:p:l10n-preview:r:l10n-preview-pot]
+file_filter = po/<lang>.po
+source_file = po/l10n-preview.pot
+source_lang = en
+type = PO

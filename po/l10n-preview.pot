@@ -1,0 +1,86 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-14 09:47+0100\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/l10n_preview/main.py:68
+msgid "TRUNCATED"
+msgstr ""
+
+#: src/l10n_preview/main.py:93
+msgid "Source"
+msgstr ""
+
+#: src/l10n_preview/main.py:108
+msgid "Translation"
+msgstr ""
+
+#: src/l10n_preview/main.py:177 src/l10n_preview/main.py:184
+#: src/l10n_preview/main.py:302
+msgid "L10n Preview"
+msgstr ""
+
+#: src/l10n_preview/main.py:188
+msgid "Open PO/TS file"
+msgstr ""
+
+#: src/l10n_preview/main.py:194
+msgid "Search"
+msgstr ""
+
+#: src/l10n_preview/main.py:210
+msgid "No file loaded"
+msgstr ""
+
+#: src/l10n_preview/main.py:225
+msgid "All"
+msgstr ""
+
+#: src/l10n_preview/main.py:226
+msgid "Untranslated"
+msgstr ""
+
+#: src/l10n_preview/main.py:227
+msgid "Fuzzy"
+msgstr ""
+
+#: src/l10n_preview/main.py:228
+msgid "Truncated"
+msgstr ""
+
+#: src/l10n_preview/main.py:266
+msgid "Translation files (*.po, *.ts)"
+msgstr ""
+
+#: src/l10n_preview/main.py:295
+msgid "Error"
+msgstr ""
+
+#: src/l10n_preview/main.py:298
+msgid "OK"
+msgstr ""
+
+#: src/l10n_preview/main.py:314
+#, python-brace-format
+msgid ""
+"Total: {total} | Translated: {translated} | Untranslated: {untranslated} | "
+"Fuzzy: {fuzzy} | Truncated: {truncated}"
+msgstr ""
+
+#: src/l10n_preview/main.py:370
+msgid "Drag and drop a .po or .ts file to preview"
+msgstr ""
