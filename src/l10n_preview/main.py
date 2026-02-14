@@ -408,7 +408,7 @@ class L10nPreviewApp(Adw.Application):
             website="https://github.com/yeager/l10n-preview",
             issue_url="https://github.com/yeager/l10n-preview/issues",
             comments=_("A localization tool by Daniel Nylander"),
-            translator_credits=_("Translate this app: https://app.transifex.com/linguaedit/l10n-preview/"),
+            translator_credits=_("Translate this app: https://app.transifex.com/danielnylander/l10n-preview/"),
         )
         about.present()
 

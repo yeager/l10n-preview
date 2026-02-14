@@ -1,7 +1,7 @@
 [main]
 host = https://www.transifex.com
 
-[o:linguaedit:p:l10n-preview:r:l10n-preview-pot]
+[o:danielnylander:p:l10n-preview:r:l10n-preview-pot]
 file_filter = po/<lang>.po
 source_file = po/l10n-preview.pot
 source_lang = en
