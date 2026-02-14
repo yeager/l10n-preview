@@ -84,3 +84,7 @@ msgstr ""
 #: src/l10n_preview/main.py:370
 msgid "Drag and drop a .po or .ts file to preview"
 msgstr ""
+
+#: desktop file
+msgid "Preview translations in simulated UI"
+msgstr ""
