@@ -189,6 +189,12 @@ class L10nPreviewWindow(Adw.ApplicationWindow):
         open_btn.connect("clicked", self._on_open)
         header.pack_start(open_btn)
 
+        # Menu button
+        menu = Gio.Menu.new()
+        menu.append(_("About L10n Preview"), "app.about")
+        menu_btn = Gtk.MenuButton(icon_name="open-menu-symbolic", menu_model=menu)
+        header.pack_end(menu_btn)
+
         # Search toggle
         self.search_btn = Gtk.ToggleButton(icon_name="system-search-symbolic")
         self.search_btn.set_tooltip_text(_("Search"))
@@ -381,10 +387,30 @@ class L10nPreviewApp(Adw.Application):
             application_id=APP_ID,
             flags=Gio.ApplicationFlags.HANDLES_OPEN,
         )
+        about_action = Gio.SimpleAction.new("about", None)
+        about_action.connect("activate", self._on_about)
+        self.add_action(about_action)
 
     def do_activate(self):
         win = L10nPreviewWindow(application=self)
         win.present()
+
+    def _on_about(self, action, param):
+        about = Adw.AboutWindow(
+            transient_for=self.props.active_window,
+            application_name=_("L10n Preview"),
+            application_icon="l10n-preview",
+            version="0.1.0",
+            developer_name="Daniel Nylander",
+            developers=["Daniel Nylander <daniel@danielnylander.se>"],
+            copyright="© 2026 Daniel Nylander",
+            license_type=Gtk.License.GPL_3_0,
+            website="https://github.com/yeager/l10n-preview",
+            issue_url="https://github.com/yeager/l10n-preview/issues",
+            comments=_("A localization tool by Daniel Nylander"),
+            translator_credits=_("Translate this app: https://app.transifex.com/linguaedit/l10n-preview/"),
+        )
+        about.present()
 
     def do_open(self, files, n_files, hint):
         self.do_activate()

@@ -2,7 +2,7 @@
 Name=L10n Preview
 Comment=Preview translations in simulated UI
 Exec=l10n-preview
-Icon=accessories-text-editor
+Icon=l10n-preview
 Terminal=false
 Type=Application
 Categories=Development;GTK;
