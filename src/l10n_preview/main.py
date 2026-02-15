@@ -1,5 +1,6 @@
 """L10n Preview — GTK4/Adwaita application for previewing PO/TS translations."""
 
+import os
 import sys
 import gettext
 import locale
@@ -15,6 +16,8 @@ from .po_parser import parse_file, TranslationEntry, EntryState  # noqa: E402
 # i18n setup
 APP_ID = "se.danielnylander.l10n-preview"
 LOCALE_DIR = str(Path(__file__).parent.parent.parent / "po")
+if not os.path.isdir(LOCALE_DIR):
+    LOCALE_DIR = "/usr/share/locale"
 
 try:
     locale.setlocale(locale.LC_ALL, "")
