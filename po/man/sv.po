@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: l 10n-preview\n"
-"POT-Creation-Date: 2026-02-15 15:38+0100\n"
+"POT-Creation-Date: 2026-02-15 18:05+0000\n"
 "PO-Revision-Date: 2026-02-15 15:38+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -72,10 +72,10 @@ msgstr ""
 #: data/man/l10n-preview.1:8
 msgid ""
 "B<l10n-preview> is a GTK4/Adwaita application for previewing translation "
-"files with simulated UI elements and quality indicators. It opens .po "
-"and .ts files, renders strings as simulated buttons, menus, dialogs, and "
-"labels, highlights truncated strings, shows source vs translation side by "
-"side, and provides filtering and search."
+"files with simulated UI elements and quality indicators. It opens .po and ."
+"ts files, renders strings as simulated buttons, menus, dialogs, and labels, "
+"highlights truncated strings, shows source vs translation side by side, and "
+"provides filtering and search."
 msgstr ""
 
 #. type: SH
