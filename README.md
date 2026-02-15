@@ -1,6 +1,8 @@
-# l10n-preview
+# L10n Preview
 
-A GTK4/Adwaita application for previewing PO/TS translations in simulated UI elements — buttons, menus, dialogs, labels. Find truncated strings and layout problems before release.
+A GTK4/Adwaita application for previewing translation files with simulated UI elements and quality indicators.
+
+![Screenshot](data/screenshots/screenshot-01.png)
 
 ## Features
 
@@ -15,14 +17,29 @@ A GTK4/Adwaita application for previewing PO/TS translations in simulated UI ele
 
 ## Installation
 
+### Debian/Ubuntu
+
+```bash
+# Add repository
+curl -fsSL https://yeager.github.io/debian-repo/KEY.gpg | sudo gpg --dearmor -o /usr/share/keyrings/yeager-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/yeager-archive-keyring.gpg] https://yeager.github.io/debian-repo stable main" | sudo tee /etc/apt/sources.list.d/yeager.list
+sudo apt update
+sudo apt install l10n-preview
+```
+
+### Fedora/RHEL
+
+```bash
+sudo dnf config-manager --add-repo https://yeager.github.io/rpm-repo/yeager.repo
+sudo dnf install l10n-preview
+```
+
+### From source
+
 ```bash
 pip install .
 l10n-preview
 ```
-
-## License
-
-GPL-3.0-or-later — Daniel Nylander <daniel@danielnylander.se>
 
 ## 🌍 Contributing Translations
 
@@ -44,3 +61,7 @@ Arabic, Czech, Danish, German, Spanish, Finnish, French, Italian, Japanese, Kore
 - Translations are pulled back and included in releases
 
 New language? Open an [issue](https://github.com/yeager/l10n-preview/issues) and we'll add it!
+
+## License
+
+GPL-3.0-or-later — Daniel Nylander <daniel@danielnylander.se>
