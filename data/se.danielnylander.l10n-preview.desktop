@@ -1,8 +1,7 @@
 [Desktop Entry]
 Name=L10n Preview
-Name[sv]=Översättningsförhandsgranskning
+Name[sv]=Förhandsvisa L10n
 Comment=Preview translations in simulated UI
-Comment[sv]=Förhandsgranska översättningar i simulerat gränssnitt
 Exec=l10n-preview
 Icon=l10n-preview
 Terminal=false
