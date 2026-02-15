@@ -1,8 +1,10 @@
 """L10n Preview — GTK4/Adwaita application for previewing PO/TS translations."""
 
+import csv
 import os
 import sys
 import gettext
+import json
 import locale
 from pathlib import Path
 
@@ -209,6 +211,12 @@ class L10nPreviewWindow(Adw.ApplicationWindow):
         self.search_btn = Gtk.ToggleButton(icon_name="system-search-symbolic")
         self.search_btn.set_tooltip_text(_("Search"))
         self.search_btn.connect("toggled", self._on_search_toggled)
+        # Export button
+        export_btn = Gtk.Button(icon_name="document-save-symbolic",
+                                tooltip_text=_("Export data"))
+        export_btn.connect("clicked", self._on_export_clicked)
+        header.pack_end(export_btn)
+
         header.pack_end(self.search_btn)
 
         main_box.append(header)
@@ -282,6 +290,44 @@ class L10nPreviewWindow(Adw.ApplicationWindow):
         main_box.append(self._status_bar)
 
         self.set_content(main_box)
+
+    def _on_export_clicked(self, *_args):
+        dialog = Adw.MessageDialog(transient_for=self,
+                                   heading=_("Export Data"),
+                                   body=_("Choose export format:"))
+        dialog.add_response("cancel", _("Cancel"))
+        dialog.add_response("csv", "CSV")
+        dialog.add_response("json", "JSON")
+        dialog.set_response_appearance("csv", Adw.ResponseAppearance.SUGGESTED)
+        dialog.connect("response", self._on_export_format_chosen)
+        dialog.present()
+
+    def _on_export_format_chosen(self, dialog, response):
+        if response not in ("csv", "json"):
+            return
+        self._export_fmt = response
+        fd = Gtk.FileDialog()
+        fd.set_initial_name(f"l10n-preview.{response}")
+        fd.save(self, None, self._on_export_save)
+
+    def _on_export_save(self, dialog, result):
+        try:
+            path = dialog.save_finish(result).get_path()
+        except Exception:
+            return
+        data = [{"msgid": e.msgid, "msgstr": e.msgstr, "state": e.state.name,
+                 "context": e.context, "reference": e.reference, "comment": e.comment}
+                for e in self.entries]
+        if not data:
+            return
+        if self._export_fmt == "csv":
+            with open(path, "w", newline="", encoding="utf-8") as f:
+                w = csv.DictWriter(f, fieldnames=data[0].keys())
+                w.writeheader()
+                w.writerows(data)
+        else:
+            with open(path, "w", encoding="utf-8") as f:
+                json.dump(data, f, ensure_ascii=False, indent=2)
 
     def _on_open(self, _btn):
         dialog = Gtk.FileDialog()
@@ -427,9 +473,11 @@ class L10nPreviewApp(Adw.Application):
         self.set_accels_for_action("app.quit", ["<Control>q"])
         self.set_accels_for_action("app.refresh", ["F5"])
         self.set_accels_for_action("app.shortcuts", ["<Control>slash"])
+        self.set_accels_for_action("app.export", ["<Control>e"])
         for n, cb in [("quit", lambda *_: self.quit()),
                       ("refresh", lambda *_: self._do_refresh()),
-                      ("shortcuts", self._show_shortcuts_window)]:
+                      ("shortcuts", self._show_shortcuts_window),
+                      ("export", lambda *_: self.get_active_window() and self.get_active_window()._on_export_clicked())]:
             a = Gio.SimpleAction.new(n, None); a.connect("activate", cb); self.add_action(a)
 
     def _do_refresh(self):
