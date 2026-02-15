@@ -1,14 +1,14 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# Copyright (C) YEAR Daniel Nylander
+# This file is distributed under the same license as the l10n-preview package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-14 09:47+0100\n"
+"Project-Id-Version: l10n-preview\n"
+"Report-Msgid-Bugs-To: daniel@danielnylander.se\n"
+"POT-Creation-Date: 2026-02-15 10:08+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,74 +17,78 @@ msgstr ""
 "Content-Type: text/plain; charset=CHARSET\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/l10n_preview/main.py:68
+#: src/l10n_preview/main.py:71
 msgid "TRUNCATED"
 msgstr ""
 
-#: src/l10n_preview/main.py:93
+#: src/l10n_preview/main.py:96
 msgid "Source"
 msgstr ""
 
-#: src/l10n_preview/main.py:108
+#: src/l10n_preview/main.py:111
 msgid "Translation"
 msgstr ""
 
-#: src/l10n_preview/main.py:177 src/l10n_preview/main.py:184
-#: src/l10n_preview/main.py:302
+#: src/l10n_preview/main.py:180 src/l10n_preview/main.py:187
+#: src/l10n_preview/main.py:311 src/l10n_preview/main.py:404
 msgid "L10n Preview"
 msgstr ""
 
-#: src/l10n_preview/main.py:188
+#: src/l10n_preview/main.py:191
 msgid "Open PO/TS file"
 msgstr ""
 
-#: src/l10n_preview/main.py:194
+#: src/l10n_preview/main.py:197
+msgid "About L10n Preview"
+msgstr ""
+
+#: src/l10n_preview/main.py:203
 msgid "Search"
 msgstr ""
 
-#: src/l10n_preview/main.py:210
+#: src/l10n_preview/main.py:219
 msgid "No file loaded"
 msgstr ""
 
-#: src/l10n_preview/main.py:225
+#: src/l10n_preview/main.py:234
 msgid "All"
 msgstr ""
 
-#: src/l10n_preview/main.py:226
+#: src/l10n_preview/main.py:235
 msgid "Untranslated"
 msgstr ""
 
-#: src/l10n_preview/main.py:227
+#: src/l10n_preview/main.py:236
 msgid "Fuzzy"
 msgstr ""
 
-#: src/l10n_preview/main.py:228
+#: src/l10n_preview/main.py:237
 msgid "Truncated"
 msgstr ""
 
-#: src/l10n_preview/main.py:266
+#: src/l10n_preview/main.py:275
 msgid "Translation files (*.po, *.ts)"
 msgstr ""
 
-#: src/l10n_preview/main.py:295
+#: src/l10n_preview/main.py:304
 msgid "Error"
 msgstr ""
 
-#: src/l10n_preview/main.py:298
+#: src/l10n_preview/main.py:307
 msgid "OK"
 msgstr ""
 
-#: src/l10n_preview/main.py:314
+#: src/l10n_preview/main.py:323
 #, python-brace-format
 msgid ""
 "Total: {total} | Translated: {translated} | Untranslated: {untranslated} | "
 "Fuzzy: {fuzzy} | Truncated: {truncated}"
 msgstr ""
 
-#: src/l10n_preview/main.py:370
+#: src/l10n_preview/main.py:379
 msgid "Drag and drop a .po or .ts file to preview"
 msgstr ""
 
-#: desktop file
-msgid "Preview translations in simulated UI"
+#: src/l10n_preview/main.py:413
+msgid "Preview translations in context before committing"
 msgstr ""
