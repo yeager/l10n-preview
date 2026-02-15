@@ -410,6 +410,7 @@ class L10nPreviewApp(Adw.Application):
             license_type=Gtk.License.GPL_3_0,
             website="https://github.com/yeager/l10n-preview",
             issue_url="https://github.com/yeager/l10n-preview/issues",
+            translate_url="https://app.transifex.com/danielnylander/l10n-preview/",
             comments=_("Preview translations in context before committing"),
             translator_credits="Daniel Nylander <daniel@danielnylander.se>",
         )
