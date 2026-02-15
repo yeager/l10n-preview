@@ -403,15 +403,15 @@ class L10nPreviewApp(Adw.Application):
             transient_for=self.props.active_window,
             application_name=_("L10n Preview"),
             application_icon="l10n-preview",
-            version="0.1.0",
+            version="0.2.2",
             developer_name="Daniel Nylander",
             developers=["Daniel Nylander <daniel@danielnylander.se>"],
             copyright="© 2026 Daniel Nylander",
             license_type=Gtk.License.GPL_3_0,
             website="https://github.com/yeager/l10n-preview",
             issue_url="https://github.com/yeager/l10n-preview/issues",
-            comments=_("A localization tool by Daniel Nylander"),
-            translator_credits=_("Translate this app: https://app.transifex.com/danielnylander/l10n-preview/"),
+            comments=_("Preview translations in context before committing"),
+            translator_credits="Daniel Nylander <daniel@danielnylander.se>",
         )
         about.present()
 
