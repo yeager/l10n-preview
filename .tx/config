@@ -6,3 +6,9 @@ file_filter = po/<lang>.po
 source_file = po/l10n-preview.pot
 source_lang = en
 type = PO
+
+[o:danielnylander:p:l10n-preview:r:l10n-preview-man]
+file_filter  = po/man/<lang>.po
+source_file  = po/man/l10n-preview.1.pot
+source_lang  = en
+type         = PO
