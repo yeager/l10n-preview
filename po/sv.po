@@ -2,23 +2,24 @@
 # Copyright (C) YEAR Daniel Nylander
 # This file is distributed under the same license as the l10n-preview package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 # Translators:
 # Daniel Nylander <po@danielnylander.se>, 2026
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: l10n-preview\n"
 "Report-Msgid-Bugs-To: daniel@danielnylander.se\n"
-"POT-Creation-Date: 2026-02-15 10:08+0100\n"
+"POT-Creation-Date: 2026-02-15 10:58+0100\n"
 "PO-Revision-Date: 2026-02-14 09:50+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
-"Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/304765/sv/)\n"
+"Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/"
+"304765/sv/)\n"
+"Language: sv\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: src/l10n_preview/main.py:71
@@ -88,13 +89,13 @@ msgid ""
 "Total: {total} | Translated: {translated} | Untranslated: {untranslated} | "
 "Fuzzy: {fuzzy} | Truncated: {truncated}"
 msgstr ""
-"Totalt: {total} | Översatta: {translated} | Icke-översatta: {untranslated} |"
-" Luddiga: {fuzzy} | Avkortade: {truncated}"
+"Totalt: {total} | Översatta: {translated} | Icke-översatta: {untranslated} | "
+"Luddiga: {fuzzy} | Avkortade: {truncated}"
 
 #: src/l10n_preview/main.py:379
 msgid "Drag and drop a .po or .ts file to preview"
 msgstr "Dra och släpp en .po eller .ts-fil för att förhandsgranska"
 
-#: src/l10n_preview/main.py:413
+#: src/l10n_preview/main.py:414
 msgid "Preview translations in context before committing"
 msgstr "Förhandsvisa översättningar i sitt sammanhang innan de skickas in"
