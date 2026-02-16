@@ -500,8 +500,7 @@ class L10nPreviewApp(Adw.Application):
         win.present()
 
     def _on_about(self, action, param):
-        about = Adw.AboutWindow(
-            transient_for=self.props.active_window,
+        about = Adw.AboutDialog(
             application_name=_("L10n Preview"),
             application_icon="l10n-preview",
             version="0.2.2",
@@ -515,7 +514,7 @@ class L10nPreviewApp(Adw.Application):
             comments=_("Preview translations in context before committing"),
             translator_credits="Daniel Nylander <daniel@danielnylander.se>",
         )
-        about.present()
+        about.present(self.props.active_window)
 
     def do_open(self, files, n_files, hint):
         self.do_activate()
