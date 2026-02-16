@@ -25,7 +25,7 @@ msgstr ""
 #: data/man/l10n-preview.1:1
 #, no-wrap
 msgid "L10N-PREVIEW"
-msgstr ""
+msgstr "L10N-PREVIEW"
 
 #. type: TH
 #: data/man/l10n-preview.1:1
@@ -43,7 +43,7 @@ msgstr "Daniel Nylander"
 #: data/man/l10n-preview.1:1
 #, no-wrap
 msgid "L10n Preview Manual"
-msgstr ""
+msgstr "Manual för L10n Preview"
 
 #. type: SH
 #: data/man/l10n-preview.1:2
@@ -55,6 +55,8 @@ msgstr "NAMN"
 #: data/man/l10n-preview.1:4
 msgid "l10n-preview - Preview translations in simulated UI elements"
 msgstr ""
+"l10n-preview - Förhandsvisa översättningar i simulerade grafiska "
+"gränssnittselement"
 
 #. type: SH
 #: data/man/l10n-preview.1:4
@@ -65,7 +67,7 @@ msgstr "SYNOPSIS"
 #. type: Plain text
 #: data/man/l10n-preview.1:6
 msgid "B<l10n-preview>"
-msgstr ""
+msgstr "B<l10n-preview>"
 
 #. type: SH
 #: data/man/l10n-preview.1:6
@@ -82,6 +84,12 @@ msgid ""
 "highlights truncated strings, shows source vs translation side by side, and "
 "provides filtering and search."
 msgstr ""
+"B<l10n-preview> är ett GTK4/Adwaita-program för förhandsgranskning av "
+"översättningsfiler med simulerade grafiska gränssnittselement och "
+"kvalitetsindikatorer. Det öppnar .po- och .ts-filer, renderar strängar som "
+"simulerade knappar, menyer, dialogrutor och etiketter, markerar avkortade "
+"strängar, visar källtexten och översättningen sida vid sida och erbjuder "
+"filtrering och sökning."
 
 #. type: SH
 #: data/man/l10n-preview.1:8
@@ -93,12 +101,12 @@ msgstr "FLAGGOR"
 #: data/man/l10n-preview.1:9
 #, no-wrap
 msgid "B<--help>"
-msgstr ""
+msgstr "B<--help>"
 
 #. type: Plain text
 #: data/man/l10n-preview.1:12
 msgid "Show help message and exit."
-msgstr ""
+msgstr "Visa hjälpmeddelande och avsluta."
 
 #. type: SH
 #: data/man/l10n-preview.1:12
@@ -110,7 +118,7 @@ msgstr "FILER"
 #: data/man/l10n-preview.1:13
 #, no-wrap
 msgid "I<~/.config/l10n-preview/>"
-msgstr ""
+msgstr "I<~/.config/l10n-preview/>"
 
 #. type: Plain text
 #: data/man/l10n-preview.1:16
@@ -121,7 +129,7 @@ msgstr "Konfigurationsfiler."
 #: data/man/l10n-preview.1:16
 #, no-wrap
 msgid "I<~/.cache/l10n-preview/>"
-msgstr ""
+msgstr "I<~/.cache/l10n-preview/>"
 
 #. type: Plain text
 #: data/man/l10n-preview.1:19
@@ -137,7 +145,7 @@ msgstr "BUGGAR"
 #. type: Plain text
 #: data/man/l10n-preview.1:21
 msgid "Report bugs at https://github.com/yeager/l10n-preview/issues"
-msgstr ""
+msgstr "Rapportera buggar på https://github.com/yeager/l10n-preview/issues"
 
 #. type: SH
 #: data/man/l10n-preview.1:21
@@ -159,4 +167,4 @@ msgstr "SE ÄVEN"
 #. type: Plain text
 #: data/man/l10n-preview.1:24
 msgid "Project homepage: https://github.com/yeager/l10n-preview"
-msgstr ""
+msgstr "Projektets webbsida: https://github.com/yeager/l10n-preview"
