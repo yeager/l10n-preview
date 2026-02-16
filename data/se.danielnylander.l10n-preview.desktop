@@ -1,8 +1,10 @@
 [Desktop Entry]
 Name=L10n Preview
+Name[sv]=Förhandsvisa L10n
 Comment=Preview translations in simulated UI
 Exec=l10n-preview
 Icon=l10n-preview
 Terminal=false
 Type=Application
 Categories=Development;GTK;
+Keywords=translation;preview;l10n;localization;

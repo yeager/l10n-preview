@@ -92,3 +92,11 @@ msgstr ""
 #: src/l10n_preview/main.py:414
 msgid "Preview translations in context before committing"
 msgstr ""
+
+#: l10n-preview/data/se.danielnylander.l10n-preview.desktop.in
+msgid "Preview translations in simulated UI"
+msgstr ""
+
+#: l10n-preview/data/se.danielnylander.l10n-preview.desktop.in
+msgid "translation;preview;l10n;localization;"
+msgstr ""

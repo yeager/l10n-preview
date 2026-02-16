@@ -6,3 +6,4 @@ Icon=l10n-preview
 Terminal=false
 Type=Application
 Categories=Development;GTK;
+_Keywords=translation;preview;l10n;localization;
