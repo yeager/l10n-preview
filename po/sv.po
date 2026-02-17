@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR Daniel Nylander
-# This file is distributed under the same license as the l10n-preview package.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: l10n-preview\n"
-"Report-Msgid-Bugs-To: daniel@danielnylander.se\n"
-"POT-Creation-Date: 2026-02-15 10:58+0100\n"
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-02-16 17:15+0100\n"
 "PO-Revision-Date: 2026-02-14 09:50+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/304765/sv/)\n"
@@ -21,68 +21,84 @@ msgstr ""
 "Language: sv\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/l10n_preview/main.py:71
+#: src/l10n_preview/main.py:74
 msgid "TRUNCATED"
 msgstr "AVKORTAD"
 
-#: src/l10n_preview/main.py:96
+#: src/l10n_preview/main.py:99
 msgid "Source"
 msgstr "Källa"
 
-#: src/l10n_preview/main.py:111
+#: src/l10n_preview/main.py:114
 msgid "Translation"
 msgstr "Översättning"
 
-#: src/l10n_preview/main.py:180 src/l10n_preview/main.py:187
-#: src/l10n_preview/main.py:311 src/l10n_preview/main.py:404
+#: src/l10n_preview/main.py:183 src/l10n_preview/main.py:190
+#: src/l10n_preview/main.py:371 src/l10n_preview/main.py:504
 msgid "L10n Preview"
 msgstr "Förhandsvisa L10n"
 
-#: src/l10n_preview/main.py:191
+#: src/l10n_preview/main.py:194
 msgid "Open PO/TS file"
 msgstr "Öppna PO/TS-fil"
 
-#: src/l10n_preview/main.py:197
+#: src/l10n_preview/main.py:200
 msgid "About L10n Preview"
 msgstr "Om Förhandsvisa L10n"
 
-#: src/l10n_preview/main.py:203
+#: src/l10n_preview/main.py:212
 msgid "Search"
 msgstr "Sök"
 
-#: src/l10n_preview/main.py:219
+#: src/l10n_preview/main.py:216
+msgid "Export data"
+msgstr ""
+
+#: src/l10n_preview/main.py:234
 msgid "No file loaded"
 msgstr "Ingen fil inläst"
 
-#: src/l10n_preview/main.py:234
+#: src/l10n_preview/main.py:249
 msgid "All"
 msgstr "Alla"
 
-#: src/l10n_preview/main.py:235
+#: src/l10n_preview/main.py:250
 msgid "Untranslated"
 msgstr "Oöversatta"
 
-#: src/l10n_preview/main.py:236
+#: src/l10n_preview/main.py:251
 msgid "Fuzzy"
 msgstr "Luddiga"
 
-#: src/l10n_preview/main.py:237
+#: src/l10n_preview/main.py:252
 msgid "Truncated"
 msgstr "Avkortade"
 
-#: src/l10n_preview/main.py:275
+#: src/l10n_preview/main.py:296
+msgid "Export Data"
+msgstr ""
+
+#: src/l10n_preview/main.py:297
+msgid "Choose export format:"
+msgstr ""
+
+#: src/l10n_preview/main.py:298
+msgid "Cancel"
+msgstr ""
+
+#: src/l10n_preview/main.py:335
 msgid "Translation files (*.po, *.ts)"
 msgstr "Översättningsfiler (*.po, *.ts)"
 
-#: src/l10n_preview/main.py:304
+#: src/l10n_preview/main.py:364
 msgid "Error"
 msgstr "Fel"
 
-#: src/l10n_preview/main.py:307
+#: src/l10n_preview/main.py:367
 msgid "OK"
 msgstr "OK"
 
-#: src/l10n_preview/main.py:323
+#: src/l10n_preview/main.py:383
 #, python-brace-format
 msgid ""
 "Total: {total} | Translated: {translated} | Untranslated: {untranslated} | "
@@ -91,10 +107,10 @@ msgstr ""
 "Totalt: {total} | Översatta: {translated} | Icke-översatta: {untranslated} |"
 " Luddiga: {fuzzy} | Avkortade: {truncated}"
 
-#: src/l10n_preview/main.py:379
+#: src/l10n_preview/main.py:439
 msgid "Drag and drop a .po or .ts file to preview"
 msgstr "Dra och släpp en .po eller .ts-fil för att förhandsgranska"
 
-#: src/l10n_preview/main.py:414
+#: src/l10n_preview/main.py:514
 msgid "Preview translations in context before committing"
 msgstr "Förhandsvisa översättningar i sitt sammanhang innan de skickas in"
