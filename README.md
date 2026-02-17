@@ -2,7 +2,7 @@
 
 ## Screenshot
 
-![Ubuntu L10n](screenshots/main.png)
+![L10n Preview](screenshots/main.png)
 
 A GTK4/Adwaita application for previewing translation files with simulated UI elements and quality indicators.
 
