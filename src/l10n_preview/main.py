@@ -404,6 +404,8 @@ class L10nPreviewWindow(Adw.ApplicationWindow):
         self._apply_filter()
 
     def _apply_filter(self):
+        if not hasattr(self, 'list_box'):
+            return
         # Clear list
         child = self.list_box.get_first_child()
         while child:
