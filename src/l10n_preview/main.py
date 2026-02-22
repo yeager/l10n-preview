@@ -31,7 +31,6 @@ gettext.bindtextdomain("l10n-preview", LOCALE_DIR)
 gettext.textdomain("l10n-preview")
 _ = gettext.gettext
 
-
 class PreviewRow(Gtk.Box):
     """A row showing source vs translation with simulated UI element."""
 
@@ -167,7 +166,6 @@ class PreviewRow(Gtk.Box):
             if entry.state == EntryState.UNTRANSLATED:
                 lbl.add_css_class("dim-label")
             return lbl
-
 
 class L10nPreviewWindow(Adw.ApplicationWindow):
     """Main application window."""
@@ -443,8 +441,6 @@ class L10nPreviewWindow(Adw.ApplicationWindow):
             placeholder.set_margin_top(48)
             self.list_box.append(placeholder)
 
-
-
     def _on_theme_toggle(self, _btn):
         sm = Adw.StyleManager.get_default()
         if sm.get_color_scheme() == Adw.ColorScheme.FORCE_DARK:
@@ -456,7 +452,6 @@ class L10nPreviewWindow(Adw.ApplicationWindow):
 
     def _update_status_bar(self):
         self._status_bar.set_text("Last updated: " + _dt_now.now().strftime("%Y-%m-%d %H:%M"))
-
 
 class L10nPreviewApp(Adw.Application):
     """Main application class."""
@@ -512,10 +507,11 @@ class L10nPreviewApp(Adw.Application):
             license_type=Gtk.License.GPL_3_0,
             website="https://github.com/yeager/l10n-preview",
             issue_url="https://github.com/yeager/l10n-preview/issues",
-            translate_url="https://app.transifex.com/danielnylander/l10n-preview/",
             comments=_("Preview translations in context before committing"),
             translator_credits=_("Translate this app: https://www.transifex.com/danielnylander/l10n-preview/"),
         )
+        about.add_link(_("Help translate"), "https://app.transifex.com/danielnylander/l10n-preview/")
+
         about.present(self.props.active_window)
 
     def do_open(self, files, n_files, hint):
@@ -524,11 +520,9 @@ class L10nPreviewApp(Adw.Application):
         if files:
             win._load_file(files[0].get_path())
 
-
 def main():
     app = L10nPreviewApp()
     return app.run(sys.argv)
-
 
 if __name__ == "__main__":
     sys.exit(main())
