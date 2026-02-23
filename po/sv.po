@@ -1,6 +1,6 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
-# This file is distributed under the same license as the PACKAGE package.
+# This file is distributed under the same license as the l10n-preview package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
 # Translators:
@@ -9,9 +9,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: PACKAGE VERSION\n"
+"Project-Id-Version: l10n-preview\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-16 17:15+0100\n"
+"POT-Creation-Date: 2026-02-22 17:04+0100\n"
 "PO-Revision-Date: 2026-02-14 09:50+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>, 2026\n"
 "Language-Team: Swedish (https://app.transifex.com/danielnylander/teams/304765/sv/)\n"
@@ -34,7 +34,7 @@ msgid "Translation"
 msgstr "Översättning"
 
 #: src/l10n_preview/main.py:183 src/l10n_preview/main.py:190
-#: src/l10n_preview/main.py:371 src/l10n_preview/main.py:504
+#: src/l10n_preview/main.py:371 src/l10n_preview/main.py:506
 msgid "L10n Preview"
 msgstr "Förhandsvisa L10n"
 
@@ -107,10 +107,16 @@ msgstr ""
 "Totalt: {total} | Översatta: {translated} | Icke-översatta: {untranslated} |"
 " Luddiga: {fuzzy} | Avkortade: {truncated}"
 
-#: src/l10n_preview/main.py:439
+#: src/l10n_preview/main.py:441
 msgid "Drag and drop a .po or .ts file to preview"
 msgstr "Dra och släpp en .po eller .ts-fil för att förhandsgranska"
 
-#: src/l10n_preview/main.py:514
+#: src/l10n_preview/main.py:516
 msgid "Preview translations in context before committing"
 msgstr "Förhandsvisa översättningar i sitt sammanhang innan de skickas in"
+
+#: src/l10n_preview/main.py:517
+msgid ""
+"Translate this app: https://www.transifex.com/danielnylander/l10n-preview/"
+msgstr ""
+"Översätt denna app: https://www.transifex.com/danielnylander/l10n-preview/"
