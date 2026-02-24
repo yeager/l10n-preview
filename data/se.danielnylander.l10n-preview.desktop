@@ -6,5 +6,6 @@ Exec=l10n-preview
 Icon=se.danielnylander.l10n-preview
 Terminal=false
 Type=Application
+StartupWMClass=se.danielnylander.l10n-preview
 Categories=Development;GTK;
 Keywords=translation;preview;l10n;localization;

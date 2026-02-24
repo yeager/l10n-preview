@@ -459,6 +459,7 @@ class L10nPreviewApp(Adw.Application):
     def __init__(self):
         super().__init__(
             application_id=APP_ID,
+        GLib.set_application_name(_("L10n Preview"))
             flags=Gio.ApplicationFlags.HANDLES_OPEN,
         )
         about_action = Gio.SimpleAction.new("about", None)
